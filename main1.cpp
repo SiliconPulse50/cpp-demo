@@ -5,6 +5,8 @@
 #include "Multiplication.h"
 #include "Division.h"
 #include "Power.h"  // <--- 加上这一行！
+#include "Mod.h"
+
 
 using namespace std;
 
@@ -15,6 +17,7 @@ int main(int argc, char** argv) {
     Multiplication mul;
     Division div;
     Power pow_tool;
+    Mod mod_tool;
 
     int choice;
     double num1, num2;
@@ -29,6 +32,7 @@ int main(int argc, char** argv) {
         cout << " 3. 乘法 (*)" << endl;
         cout << " 4. 除法 (/)" << endl;
         cout<<" 5.乘方（^)"<<endl;
+        cout << " 6. 取模 (%)" << endl;
         cout << " 0. 退出程序" << endl;
         cout << "------------------------" << endl;
         cout << "请输入你的选择 (0-4): ";
@@ -63,6 +67,9 @@ int main(int argc, char** argv) {
             case 5:
     			cout << ">>> 结果是: " << pow_tool.calculate(num1, num2) << endl;
     			break;
+    		case 6:
+            	cout << ">>> " << num1 << " 除以 " << num2 << " 的余数是: " << mod_tool.calculate(num1, num2) << endl;
+            	break;
             default:
                 cout << "!!! 这里的选项不对，请重新输入 !!!" << endl;
         }
