@@ -25,7 +25,8 @@ int main(int argc, char** argv) {
     while (true) {
         // 2. 打印菜单界面
         cout << "\n========================" << endl;
-        cout << "   SiliconPulse 的专属计算器 v1.0   " << endl;
+        
+        cout << " === 邪恶的分支计算器 === " << endl;
         cout << "========================" << endl;
         cout << " 1. 加法 (+)" << endl;
         cout << " 2. 减法 (-)" << endl;
